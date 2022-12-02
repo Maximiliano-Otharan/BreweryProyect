@@ -1,0 +1,34 @@
+<h1 class="text">Lista de cervezas</h1>
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th class="text">Imagen</th>
+            <th class="text">Nombre</th>
+            <th class="text">Tipo</th>
+            <th class="text">Precio</th>
+            <th class="text">Stock</th>
+            <th class="text">Cantidad</th>
+            <th class="text">Comprar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="columnBeer" *ngFor="let beer of beers" [ngClass]="{'Oferta': beer.Oferta}">
+            <td><img width="100" [src]="beer.Imagen" [alt]="beer.Nombre"></td>
+            <td class="text">{{beer.Nombre | uppercase}}</td>
+            <td class="text">{{beer.Tipo}}</td>
+            <td class="text">{{beer.Precio | currency}}</td>
+            <td><span class="badge text-bg-danger" *ngIf="beer.Stock==0">SIN STOCK</span> <span  class="badge text-bg-success" *ngIf="beer.Stock > 0">HAY STOCK</span></td>
+            <td>
+                <app-input-integer [(cantidad)]="beer.Cantidad" [max]="beer.Stock" *ngIf="beer.Stock" (maxChange)="maxChange($event)"></app-input-integer>
+                <p class="text"> Cant: {{beer.Cantidad}}</p>
+            </td>
+            <td>
+                <button class="botonComprar" (click)="addToCart(beer)">Comprar</button>
+            </td>
+        </tr>
+        <tr>
+            <td [innerHTML]="valor"></td>
+            <td> <button #button class="botonDesactive" (mousedown)="mouseDownEvnt()" (mouseup)="mouseUpEvent()">Pagar</button> </td>
+        </tr>
+    </tbody>
+</table>

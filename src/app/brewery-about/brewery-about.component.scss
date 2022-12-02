@@ -1,0 +1,55 @@
+.form {
+    width: 100%;
+    height: 500px;
+    background-color:  rgb(240, 170, 0);
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: -5px 10px rgb(238, 179, 42, 0.3);
+}
+
+.titleForm {
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(36, 34, 31);
+    background-color: rgb(190, 134, 0);
+    text-align: center;
+    border-bottom: inset 5px rgb(149, 105, 0);
+}
+
+.subTitleForm {
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(36, 34, 31);
+    text-align: center
+}
+
+.hrStyle {
+    background-color: black;
+    width: 100%;
+    height: 5px;
+    border: solid 1px rgb(238, 179, 42, 0.3);
+}
+
+.formStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.formStyle > label {
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(36, 34, 31);
+    text-align: center;
+}
+
+.formStyle > input {
+    width: 50%;
+    background-color: #FFD05D;
+    text-align: center;
+    color: rgb(36, 34, 31);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

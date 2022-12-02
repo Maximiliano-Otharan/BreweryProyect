@@ -1,0 +1,52 @@
+.Oferta {
+    border: 2px solid rgb(240, 170, 0);
+}
+
+.text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.botonComprar {
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    background-color: rgb(240, 170, 0);
+    color: rgb(36, 34, 31);
+    text-align: center;
+    transition: background-color 0.20s ease-in;
+}
+
+.botonComprar:hover {
+    background-color: rgb(255, 208, 93);
+}
+
+.botonDesactive {
+    display: none;
+}
+
+.botonActive {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: rgb(240, 170, 0);
+    color: rgb(36, 34, 31);
+    transition: background-color 0.20s ease-in;
+}
+
+.botonActive:hover {
+    background-color: rgb(255, 208, 93);
+}
+
+.botonActive-mouseDown {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: rgb(190, 134, 0);
+    color: rgb(36, 34, 31);
+}

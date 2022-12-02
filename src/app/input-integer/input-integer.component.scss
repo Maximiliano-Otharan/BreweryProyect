@@ -1,0 +1,13 @@
+div{
+    vertical-align: middle;
+}
+
+div > input {
+    max-width: 40px;
+}
+
+div >  button {
+    background-color: rgb(240, 170, 0);
+    color: rgb(36, 34, 31);
+    width: 30px;
+}
