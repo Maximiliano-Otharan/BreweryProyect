@@ -1,3 +1,5 @@
+Aplicacion creada para un seminario de la facultad en busqueda de seguir mejorando con angular.
+
 # Brewery
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
